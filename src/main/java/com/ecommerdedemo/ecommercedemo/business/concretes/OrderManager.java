@@ -9,6 +9,7 @@ import com.ecommerdedemo.ecommercedemo.business.exceptions.InsufficientStockExce
 import com.ecommerdedemo.ecommercedemo.business.exceptions.ResourceNotFoundException;
 import com.ecommerdedemo.ecommercedemo.entities.concretes.*;
 import com.ecommerdedemo.ecommercedemo.repository.abstracts.OrderRepository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class OrderManager implements OrderService {
 
     private final OrderRepository orderRepository;

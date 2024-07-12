@@ -9,11 +9,13 @@ import com.ecommerdedemo.ecommercedemo.entities.concretes.CartItem;
 import com.ecommerdedemo.ecommercedemo.entities.concretes.Customer;
 import com.ecommerdedemo.ecommercedemo.repository.abstracts.CartRepository;
 import com.ecommerdedemo.ecommercedemo.repository.abstracts.CustomerRepository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CartManager implements CartService {
     private final CartRepository cartRepository;
     private final CustomerRepository customerRepository;

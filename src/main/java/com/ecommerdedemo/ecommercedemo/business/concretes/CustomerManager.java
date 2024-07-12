@@ -5,10 +5,12 @@ import com.ecommerdedemo.ecommercedemo.business.dtos.CustomerDTO;
 import com.ecommerdedemo.ecommercedemo.business.exceptions.ResourceNotFoundException;
 import com.ecommerdedemo.ecommercedemo.entities.concretes.Customer;
 import com.ecommerdedemo.ecommercedemo.repository.abstracts.CustomerRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CustomerManager implements CustomerService {
 
     private final CustomerRepository customerRepository;
